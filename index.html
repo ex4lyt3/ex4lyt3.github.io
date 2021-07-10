@@ -2,6 +2,69 @@
 <html>
 <head> </head>
 <body>
-  <h1> my portfolio </h1>
+  <!-- My first html code! 6/7/2021- -->
+       <!-- dat backgrouund gradient -->
+  <style>
+    :root{
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    body{
+      background: rgb(160,160,160);
+      background: linear-gradient(90deg, rgba(160,160,160,1) 0%, rgba(255,255,255,1) 100%); 
+    }
+    .writeups{
+      width: 600px;
+      height: auto;
+      margin: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      padding: auto;
+      padding-left:2px;
+      border-width: 5px;
+      border-style:solid;
+      border-color: rgba(0,0,0,0.23);
+      border-radius:5px;
+      background-color: whitesmoke;
+      color: black;
+    }
+    .writeups:hover{
+      animation-name: hover;
+      animation-duration: 0.4s;
+      animation-fill-mode: forwards;
+    }
+    .datemark{
+      opacity:0.6;
+      font-style:italic;
+    }
+    @keyframes hover{
+      0%{
+      transform: scale(100%)
+      }
+      100%{
+        transform: scale(95%)
+      }
+    }
+ </style>
+  
+  <section class="anavbar">
+  <h1> It's Never Over </h1>
+  <h2> Writeups 2021-2021 by  </h2>
+  </section>
+  
+  <hr>
+
+  <section class="writeup-lists"> <!-- writeup-lists could be replaced...-->
+      <div class = "writeups">
+      <h2> TryHackMe's Pre-Security Path Review </h2>
+      <p> My First Writeup and Blog! </p>
+      <p class="datemark"> 10/7/2021 </p>
+      </div>
+      <div class = "writeups">
+      <h2> TryHackMe's Pre-Security Path </h2>
+      <p> it cool </p>
+      <p class="datemark"> ??/??/2021 </p>
+      </div> 
+  </section>
 </body>
 </html>
