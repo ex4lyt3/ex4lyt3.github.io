@@ -6,14 +6,49 @@
        <!-- dat backgrouund gradient -->
   <style>
     :root{
-      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     }
     body{
-      background: rgb(160,160,160);
-      background: linear-gradient(90deg, rgba(160,160,160,1) 0%, rgba(255,255,255,1) 100%); 
+      background: transparent;
+      /* background: linear-gradient(90deg, rgba(160,160,160,1) 0%, rgba(255,255,255,1) 100%); */
+      background-color: rgba(238, 225, 225, 0.959);
+    }
+        /* Define the main Navigation block */
+    .myNav {
+        display: block;
+        height: 65px;
+        line-height: 50px;
+        background-color: transparent;
+        border-radius: 5px;
+        border-color: black;
+    }
+    /* Remove bullets, margin and padding */
+    .myNav ul {
+        list-style: none;
+        padding-right:5px;
+        margin: 0;
+    }
+    .myNav li {
+        float: right;
+        /* Or you can use display: inline; */
+    }
+    /* Define the block styling for the links */
+    .myNav li a {
+        display: inline-block;
+        text-align: center;
+        padding: 14px 16px;
+        font-style:normal;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .header{
+      text-decoration: none;
+      font-style: normal;
+      font-weight: normal;
     }
     .writeups{
-      width: auto;
+      width: 600px;
       height: auto;
       margin: 10px;
       margin-left: auto;
@@ -21,6 +56,7 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       padding: auto;
       padding-left:2px;
+      padding-top: 2px;
       border-width: 5px;
       border-style:solid;
       border-color: rgba(0,0,0,0.23);
@@ -37,6 +73,11 @@
       opacity:0.6;
       font-style:italic;
     }
+    .topic{
+      font-style:normal;
+      opacity: 1;
+      color: black;
+    }
     @keyframes hover{
       0%{
       transform: scale(100%)
@@ -46,20 +87,42 @@
       }
     }
  </style>
+
+ <nav class="myNav">
+   <ul>
+     <li><a href="#"> Links </a> </li>
+     <li><a href="#"> Search </a> </li>
+     <li><a href="https://ex4lyt3.github.io"> Menu </a> </li>
+   </ul>
+   <h1 class="title"> It's Never <u>Over</u></h2>
+ </nav>
   
-  <section class="anavbar">
-  <h1> It's Never Over </h1>
-  <h2> Writeups 2021-2021 by  </h2>
+  <section class="header">
+    <h2 style="font-weight:normal;"> Blog 2021 by <a href="#" style="color: blue;text-decoration: none;"">  </a> </h2>
   </section>
   
   <hr>
 
-  <section class="writeup-lists"> <!-- writeup-lists could be replaced...-->
+  <section class="writeup-lists"> 
+    <!-- writeup-lists could be replaced...-->
+    <h2 style="text-align: center"> Posts </h2>
+      <a href="https://ex4lyt3.github.io/tryhackme-presecurity-review">
       <div class = "writeups">
       <h2> TryHackMe's Pre-Security Path Review </h2>
       <p> My First Writeup and Blog! </p>
-      <p class="datemark"> 10/7/2021 </p>
+      <p class="datemark"> 10/7/2021 <a href="https://tryhackme.com" target="_blank"class="topic">TryHackMe</a> </p>
       </div>
+      </a>
+      <div class = "writeups">
+      <h2> Creating A Website with HTML and CSS</h2>
+      <p> it cool </p>
+      <p class="datemark"> ??/??/2021 <a href="#" target="_blank"class="topic">Web Development</a></p>
+      </div>
+      <div class = "writeups">
+      <h2> TryHackMe's Pre-Security Path </h2>
+      <p> it cool </p>
+      <p class="datemark"> ??/??/2021 </p>
+      </div> 
       <div class = "writeups">
       <h2> TryHackMe's Pre-Security Path </h2>
       <p> it cool </p>
